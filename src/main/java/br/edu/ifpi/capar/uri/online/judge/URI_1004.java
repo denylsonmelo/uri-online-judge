@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.edu.ifpi.capar.uri.online.judge;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  *
  * @author Denylson Melo
  */
 public class URI_1004 {
-    
+     public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int valor1, valor2;
+        valor1 = Integer.parseInt(br.readLine());
+        valor2 = Integer.parseInt(br.readLine());
+
+        System.out.println("PROD = " + (valor1 * valor2));
+    }
 }

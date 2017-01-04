@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
  * @author Denylson Melo
  */
 public class URI_1001 {
+
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

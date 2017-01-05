@@ -9,7 +9,8 @@ import java.io.InputStreamReader;
  * @author Denylson Melo
  */
 public class URI_1004 {
-     public static void main(String[] args) throws IOException {
+
+    public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int valor1, valor2;

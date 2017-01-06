@@ -23,9 +23,9 @@ public class URITest {
     }
 
     private String normalizarResultado(String string) {
-        return string + "\n";
+        return string.replace('.', ',') + "\n";
     }
-
+    
     protected void proverLinhasAoSystemIn(String... linhas) {
         systemInMock.provideLines(linhas);
     }

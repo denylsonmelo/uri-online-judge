@@ -16,9 +16,9 @@ public class URI_1010 {
         double valor, total = 0;
 
         for (String linha = br.readLine(); linha != null; linha = br.readLine()) {
-            String[] words = linha.split(" ");
-            quantidade = Integer.parseInt(words[1]);
-            valor = Double.parseDouble(words[2]);
+            String[] partes = linha.split(" ");
+            quantidade = Integer.parseInt(partes[1]);
+            valor = Double.parseDouble(partes[2]);
             total += quantidade * valor;
         }
 

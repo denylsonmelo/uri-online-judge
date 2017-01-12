@@ -57,11 +57,11 @@ public abstract class URITestBaseImpl implements URITestBase {
     }
 
     private String logComSeparadorNormalizado() {
-        return systemOutRule.getLogWithNormalizedLineSeparator();
+        return normalizarResultado(systemOutRule.getLogWithNormalizedLineSeparator());
     }
 
     private String normalizarResultado(String string) {
-        return string.replace('.', ',') + "\n";
+        return string.replace('.', ',');
     }
 
     private void proverLinhasAoSystemIn(String... linhas) {
@@ -69,7 +69,7 @@ public abstract class URITestBaseImpl implements URITestBase {
     }
 
     private void afirmeQueResultadoEh(String string) {
-        assertThat(logComSeparadorNormalizado(), is(normalizarResultado(string)));
+        assertThat(logComSeparadorNormalizado(), is(normalizarResultado(string+"\n")));
     }
 
     private void executarMetodoPorReflection() {

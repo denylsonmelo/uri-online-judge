@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  */
 public class URI_1007 {
 
-    public static void main(Object object) throws IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int valor1, valor2, valor3, valor4;
         valor1 = Integer.parseInt(br.readLine());
@@ -18,7 +18,7 @@ public class URI_1007 {
         valor3 = Integer.parseInt(br.readLine());
         valor4 = Integer.parseInt(br.readLine());
 
-        System.out.println("DIFERENCA = " + (valor1 * valor2 - valor3* valor4));
+        System.out.println("DIFERENCA = " + (valor1 * valor2 - valor3 * valor4));
     }
 
 }

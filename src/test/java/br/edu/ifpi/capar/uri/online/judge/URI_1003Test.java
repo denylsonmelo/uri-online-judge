@@ -1,32 +1,20 @@
 package br.edu.ifpi.capar.uri.online.judge;
 
-import java.io.IOException;
+import br.edu.ifpi.capar.uri.online.judge.base.URITestBaseImpl;
 import org.junit.Test;
 
 /**
  *
  * @author Denylson Melo
  */
-public class URI_1003Test extends URITest{
+public class URI_1003Test extends URITestBaseImpl {
 
     @Test
-    public void deveValidarExemplosEntradaSaidaDoSite1() throws IOException {
-        proverLinhasAoSystemIn("30", "10");
-        URI_1003.main(null);
-        afirmeQueResultadoEh("SOMA = 40");
-    }
-    
-    @Test
-    public void deveValidarExemplosEntradaSaidaDoSite2() throws IOException {
-        proverLinhasAoSystemIn("-30", "10");
-        URI_1003.main(null);
-        afirmeQueResultadoEh("SOMA = -20");
-    }
-    
-    @Test
-    public void deveValidarExemplosEntradaSaidaDoSite3() throws IOException {
-        proverLinhasAoSystemIn("0", "0");
-        URI_1003.main(null);
-        afirmeQueResultadoEh("SOMA = 0");
+    @Override
+    public void deveValidarExemplosDeEntradaESaidaDoSite() {
+        setClass(this.getClass());
+        afirmeQueComAsEntradas("30", "10").temosAsSaidas("SOMA = 40");
+        afirmeQueComAsEntradas("-30", "10").temosAsSaidas("SOMA = -20");
+        afirmeQueComAsEntradas("0", "0").temosAsSaidas("SOMA = 0");
     }
 }

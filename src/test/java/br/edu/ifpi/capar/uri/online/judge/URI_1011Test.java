@@ -1,32 +1,20 @@
 package br.edu.ifpi.capar.uri.online.judge;
 
-import java.io.IOException;
+import br.edu.ifpi.capar.uri.online.judge.base.URITestBaseImpl;
 import org.junit.Test;
 
 /**
  *
  * @author Denylson Melo
  */
-public class URI_1011Test extends URITest{
+public class URI_1011Test extends URITestBaseImpl {
 
     @Test
-    public void deveValidarExemplosEntradaSaidaDoSite1() throws IOException {
-        proverLinhasAoSystemIn("3");
-        URI_1011.main(null);
-        afirmeQueResultadoEh("VOLUME = 113.097");
-    }
-    
-    @Test
-    public void deveValidarExemplosEntradaSaidaDoSite2() throws IOException {
-        proverLinhasAoSystemIn("15");
-        URI_1011.main(null);
-        afirmeQueResultadoEh("VOLUME = 14137.155");
-    }
-    
-    @Test
-    public void deveValidarExemplosEntradaSaidaDoSite3() throws IOException {
-        proverLinhasAoSystemIn("1523");
-        URI_1011.main(null);
-        afirmeQueResultadoEh("VOLUME = 14797486501.627");
+    @Override
+    public void deveValidarExemplosDeEntradaESaidaDoSite() {
+        setClass(this.getClass());
+        afirmeQueComAsEntradas("3").temosAsSaidas("VOLUME = 113.097");
+        afirmeQueComAsEntradas("15").temosAsSaidas("VOLUME = 14137.155");
+        afirmeQueComAsEntradas("1523").temosAsSaidas("VOLUME = 14797486501.627");
     }
 }

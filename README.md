@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/denylsonmelo/uri-online-judge.svg?branch=master)](https://travis-ci.org/denylsonmelo/uri-online-judge)
+
 # URI Online Judge
 Um repositório com minhas soluções para os problemas do [URI Online Judge].
 Não são soluções otimizadas, apenas soluções que atendem a entrada e saída nos niveis propostos.

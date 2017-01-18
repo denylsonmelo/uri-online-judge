@@ -50,6 +50,5 @@ public class URI_1042 {
         System.out.println(numero1);
         System.out.println(numero2);
         System.out.println(numero3);
-
     }
 }

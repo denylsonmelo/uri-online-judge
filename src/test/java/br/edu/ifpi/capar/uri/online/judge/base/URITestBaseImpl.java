@@ -43,13 +43,15 @@ public abstract class URITestBaseImpl implements URITestBase {
     public abstract void deveValidarExemplosDeEntradaESaidaDoSite();
 
     @Override
-    public void setClass(Class clazz) {
+    public URITestBase paraAClasse(Class clazz) {
         this.clazz = clazz;
+        return this;
     }
 
     @Override
-    public void setNomeMetodo(String nomeMetodo) {
+    public URITestBase paraOMetodo(String nomeMetodo) {
         this.nomeMetodo = nomeMetodo;
+        return this;
     }
 
     private void limparSystemOut() {

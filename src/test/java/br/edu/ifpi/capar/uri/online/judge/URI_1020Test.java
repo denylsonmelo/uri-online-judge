@@ -12,7 +12,7 @@ public class URI_1020Test extends URITestBaseImpl {
     @Test
     @Override
     public void deveValidarExemplosDeEntradaESaidaDoSite() {
-        setClass(this.getClass());
+        paraAClasse(this.getClass());
         afirmeQueComAsEntradas("400")
                 .temosAsSaidas("1 ano(s)\n"
                         + "1 mes(es)\n"

@@ -12,7 +12,7 @@ public class URI_1036Test extends URITestBaseImpl {
     @Test
     @Override
     public void deveValidarExemplosDeEntradaESaidaDoSite() {
-        setClass(this.getClass());
+        paraAClasse(this.getClass());
         afirmeQueComAsEntradas("10.0 20.1 5.1")
                 .temosAsSaidas("R1 = -0.29788\n"
                         + "R2 = -1.71212");

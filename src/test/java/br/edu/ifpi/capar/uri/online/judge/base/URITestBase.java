@@ -8,11 +8,11 @@ public interface URITestBase {
 
     URITestBase afirmeQueComAsEntradas(String... entradas);
 
-    void deveValidarExemplosDeEntradaESaidaDoSite();
+    abstract void deveValidarExemplosDeEntradaESaidaDoSite();
 
-    void setClass(Class clazz);
+    URITestBase paraAClasse(Class clazz);
 
-    void setNomeMetodo(String nomeMetodo);
+    URITestBase paraOMetodo(String nomeMetodo);
 
     void temosAsSaidas(String saida);
 }

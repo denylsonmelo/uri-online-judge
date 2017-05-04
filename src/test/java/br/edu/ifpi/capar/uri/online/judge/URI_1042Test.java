@@ -29,5 +29,37 @@ public class URI_1042Test extends URITestBaseImpl {
                         + "-14\n"
                         + "21\n"
                         + "7");
+        afirmeQueComAsEntradas("-14 7 21")
+                .temosAsSaidas("-14\n"
+                        + "7\n"
+                        + "21\n"
+                        + "\n"
+                        + "-14\n"
+                        + "7\n"
+                        + "21");
+        afirmeQueComAsEntradas("7 -14 21")
+                .temosAsSaidas("-14\n"
+                        + "7\n"
+                        + "21\n"
+                        + "\n"
+                        + "7\n"
+                        + "-14\n"
+                        + "21");
+        afirmeQueComAsEntradas("21 -14 7")
+                .temosAsSaidas("-14\n"
+                        + "7\n"
+                        + "21\n"
+                        + "\n"
+                        + "21\n"
+                        + "-14\n"
+                        + "7");
+        afirmeQueComAsEntradas("21 7 -14")
+                .temosAsSaidas("-14\n"
+                        + "7\n"
+                        + "21\n"
+                        + "\n"
+                        + "21\n"
+                        + "7\n"
+                        + "-14");
     }
 }
